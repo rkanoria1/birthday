@@ -24,9 +24,16 @@ describe('siteContent', () => {
     ])
   })
 
-  it('has a numeric passcode and four balloon qualities', () => {
-    expect(siteContent.passcode).toMatch(/^\d{4}$/)
+  it('uses the requested private passcode and four balloon qualities', () => {
+    expect(siteContent.passcode).toBe('2901')
     expect(siteContent.balloons.qualities).toHaveLength(4)
+  })
+
+  it('closes with an honest birthday message for a day spent apart', () => {
+    expect(siteContent.finalLetter.body).toBe(
+      'Happy birthday, Somya. I may not be beside you today, but I still wanted your day to hold a little piece of me. I hope this small celebration made you smile. I feel very lucky that this is only the beginning of all the moments we will share.',
+    )
+    expect(siteContent.finalLetter.body).not.toContain('celebrating your day together')
   })
 
   it('uses the licensed Hindi acoustic track from the local audio library', () => {

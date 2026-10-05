@@ -13,7 +13,7 @@ const look = (number: number, alt: string, editorialCaption: string, palette: Lo
 export const siteContent: SiteContent = {
   recipientName: 'Somya',
   birthday: '2026-10-06',
-  passcode: '0610',
+  passcode: '2901',
   passcodeHint: 'The day this celebration belongs to',
   audio: {
     src: '/audio/love-acoustic-romantic-hindi-guitar.m4a',
@@ -50,7 +50,7 @@ export const siteContent: SiteContent = {
     body: 'There are first trips, first festivals, ordinary mornings, ridiculous jokes, and many birthdays still waiting for us. I cannot promise every day will be perfect—but I can promise to keep listening, learning, and showing up.',
   },
   finalLetter: {
-    body: 'Happy birthday, Somya. This is our first time celebrating your day together, and I wanted it to say something simple: I notice you, I value you, and I feel very lucky that I get to know you better from here.',
+    body: 'Happy birthday, Somya. I may not be beside you today, but I still wanted your day to hold a little piece of me. I hope this small celebration made you smile. I feel very lucky that this is only the beginning of all the moments we will share.',
     secret: 'A little secret: every version of my future looks better with you in it. ♥ — Rahul',
   },
 }
